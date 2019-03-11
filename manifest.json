@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "ScrollControl",
+  "description": "Some websites let you scroll to infnity but your time is finite, even precious. Take back control.",
+  "version": "0.0.1",
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://*.reddit.com/*" ],
+      "js": [ "content_script.js" ]
+    }
+  ],
+  "options_ui": {
+    "page": "options/index.html"
+  }
+}
